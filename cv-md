@@ -68,3 +68,12 @@ for(let j=0; j<=arrayImg.length - 1; j++) {
   };
   document.body.removeChild(element);
 };``
+
+___
+___
+
+## my education
+
+- **[HTML academy](https://htmlacademy.ru/profile/id593313)
+- **[freeCodeCamp](https://www.freecodecamp.org/ukrainian/lomakin-1990-06-01)
+- **ITDVN (front-end developer, just started)
