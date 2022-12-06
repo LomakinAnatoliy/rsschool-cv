@@ -40,34 +40,35 @@ ___
 
 The idea is that when the page is updated, three blocks of figures constantly change their position on the website page. Strong for work ["Lamp"](https://github.com/LomakinAnatoliy/TestWork-Lamp/blob/main/build/js/script.js)
 
-`const circle = document.querySelector('.circle');
-const rhombus = document.querySelector('.rhombus');
-const triangle = document.querySelector('.triangle');
 
-let arrayImg = [circle, rhombus, triangle];
+    `const circle = document.querySelector('.circle');
+    const rhombus = document.querySelector('.rhombus');
+    const triangle = document.querySelector('.triangle');
 
-for(let j=0; j<=arrayImg.length - 1; j++) {
-  let element = arrayImg[j];
-  for(var i = 0; i < 6; i++){
-    let min = Math.ceil(10);
-    let max = Math.floor(35);
-    let widthMax = Math.floor(document.documentElement.scrollWidth - 40);
-    let heightMax = Math.floor(document.documentElement.scrollHeight - 40);
+    let arrayImg = [circle, rhombus, triangle];
 
-    let getWidth = Math.floor(Math.random() * (widthMax - min + 1)) + min;
-    let getHeight = Math.floor(Math.random() * (heightMax - min + 1)) + min;
-    let getValue = Math.floor(Math.random() * (max - min + 1)) + min;
+    for(let j=0; j<=arrayImg.length - 1; j++) {
+      let element = arrayImg[j];
+      for(var i = 0; i < 6; i++){
+        let min = Math.ceil(10);
+        let max = Math.floor(35);
+        let widthMax = Math.floor(document.documentElement.scrollWidth - 40);
+        let heightMax = Math.floor(document.documentElement.scrollHeight - 40);
 
-    element.style.top = getHeight + 'px';
-    element.style.left = getWidth + 'px';
-    element.style.width = getValue + 'px';
-    element.style.height = getValue + 'px';
+        let getWidth = Math.floor(Math.random() * (widthMax - min + 1)) + min;
+        let getHeight = Math.floor(Math.random() * (heightMax - min + 1)) + min;
+        let getValue = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    let clone = element.cloneNode(false);
-    document.body.insertAdjacentElement('beforeEnd', clone);
-  };
-  document.body.removeChild(element);
-};`
+        element.style.top = getHeight + 'px';
+        element.style.left = getWidth + 'px';
+        element.style.width = getValue + 'px';
+        element.style.height = getValue + 'px';
+
+        let clone = element.cloneNode(false);
+        document.body.insertAdjacentElement('beforeEnd', clone);
+      };
+      document.body.removeChild(element);
+    };`
 
 ___
 ___
