@@ -40,7 +40,7 @@ ___
 
 The idea is that when the page is updated, three blocks of figures constantly change their position on the website page. Strong for work ["Lamp"](https://github.com/LomakinAnatoliy/TestWork-Lamp/blob/main/build/js/script.js)
 
-``const circle = document.querySelector('.circle');
+`const circle = document.querySelector('.circle');
 const rhombus = document.querySelector('.rhombus');
 const triangle = document.querySelector('.triangle');
 
@@ -67,7 +67,7 @@ for(let j=0; j<=arrayImg.length - 1; j++) {
     document.body.insertAdjacentElement('beforeEnd', clone);
   };
   document.body.removeChild(element);
-};``
+};`
 
 ___
 ___
