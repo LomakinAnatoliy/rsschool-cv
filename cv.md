@@ -75,9 +75,9 @@ ___
 
 ## Education
 
-- **[HTML academy](https://htmlacademy.ru/profile/id593313)
-- **[freeCodeCamp](https://www.freecodecamp.org/ukrainian/lomakin-1990-06-01)
-- **ITDVN (front-end developer, just started)
+- **[HTML academy]**(https://htmlacademy.ru/profile/id593313)
+- **[freeCodeCamp]**(https://www.freecodecamp.org/ukrainian/lomakin-1990-06-01)
+- **ITDVN** (front-end developer, just started)
 
 ___
 ___
