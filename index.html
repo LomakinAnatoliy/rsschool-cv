@@ -137,11 +137,16 @@ for(let j=0; j &lt; =arrayImg.length - 1; j++) {
   for(var i = 0; i &lt; 6; i++) { 
     let min = Math.ceil(10); 
     let max = Math.floor(35); 
-    let widthMax = Math.floor(document.documentElement.scrollWidth - 40); 
-    let heightMax = Math.floor(document.documentElement.scrollHeight - 40); 
-    let getWidth = Math.floor(Math.random() * (widthMax - min + 1)) + min; 
-    let getHeight = Math.floor(Math.random() * (heightMax - min + 1)) + min; 
-    let getValue =       Math.floor(Math.random() * (max - min + 1)) + min; 
+    let widthMax = 
+      Math.floor(document.documentElement.scrollWidth - 40); 
+    let heightMax = 
+      Math.floor(document.documentElement.scrollHeight - 40); 
+    let getWidth = 
+      Math.floor(Math.random() * (widthMax - min + 1)) + min; 
+    let getHeight = 
+      Math.floor(Math.random() * (heightMax - min + 1)) + min; 
+    let getValue = 
+      Math.floor(Math.random() * (max - min + 1)) + min; 
     element.style.top = getHeight + 'px'; 
     element.style.left = getWidth + 'px'; 
     element.style.width = getValue + 'px'; 

@@ -110,7 +110,7 @@ body {
   grid-template-columns: 410px 1fr;
   grid-template-rows: repeat(4, min-content);
   max-width: 1289px;
-  min-width: 320px;
+  min-width: 300px;
   margin: 0 auto;
   padding-bottom: 3.125rem;
 }
@@ -124,6 +124,7 @@ body {
 .navigation__list {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 1.25rem;
 }
 
@@ -156,7 +157,7 @@ body {
 
 .story__text {
   max-width: 720px;
-  min-width: 320px;
+  min-width: 300px;
   margin-top: 0.938rem;
   font-size: 1.563em;
 }
@@ -212,8 +213,8 @@ body {
   padding-left: 26px;
 }
 
-.contacts__address::after,
-.contacts__phone ::after {
+.contacts__address::before,
+.contacts__phone::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -223,16 +224,16 @@ body {
   content: "";
 }
 
-.contacts__address::after {
+.contacts__address::before {
   background-image: url("img/svg/address.svg");
 }
 
-.contacts__phone ::after{
+.contacts__phone::before{
   background-image: url("img/svg/phone.svg");
 }
 
-.contacts__mail::after,
-.contacts__git::after {
+.contacts__mail::before,
+.contacts__git::before {
   position: absolute;
   top: 3px;
   left: 0;
@@ -242,11 +243,11 @@ body {
   content: "";
 }
 
-.contacts__mail::after {
+.contacts__mail::before {
   background-image: url("img/svg/mail.svg");
 }
 
-.contacts__git::after {
+.contacts__git::before {
   background-image: url("img/svg/git_hub.svg");
 }
 
@@ -357,6 +358,7 @@ body {
 .code {
   display: grid;
   grid-template-columns: 410px 1fr;
+  grid-template-rows: auto;
   grid-column-gap: 1.875rem;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
@@ -438,4 +440,135 @@ body {
   fill: var(--hover-color);
   stroke: var(--hover-color);
   transition: all 0.3s ease-out;
+}
+
+@media all and (max-width: 1300px) {
+
+  .header {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .header__image img{
+    width: 300px !important;
+  }
+  
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__subtitle {
+    font-size: 25px;
+  }
+
+  .story__text {
+    font-size: 14px;
+  }
+
+  .wrap {
+    text-align: center;
+  }
+
+  .contacts {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .contacts__address::before,
+  .contacts__phone::before,
+  .contacts__mail::before,
+  .contacts__git::before {
+    background-image: none;
+  }
+
+  .education {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .skills {
+    grid-column: 1/2;
+    grid-row: 3/4
+  }
+  
+  .navigation {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .navigation__list {
+    justify-content: center;
+  }
+  
+  .header__image {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .header__wrap {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .header__story {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-top: 1.875rem;
+  }
+
+  .wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 10px
+  }
+
+  .code {
+    grid-template-columns: 1fr;
+    padding: 10px
+  }
+
+  .code__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .code__text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 14px;
+  }
+
+  .code__codes {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 0;
+  }
+
+  .code__codes code{
+    font-size: 9px
+  }
+
+  .wrapper {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: block;
+    column-gap: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .experience {
+    min-width: 300px
+  }
+
+  .languages {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-top: 30px;
+  }
+
+  .footer__wrap {
+    padding: 10px;
+  }
 }
