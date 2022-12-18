@@ -132,7 +132,7 @@ const triangle = document.querySelector('.triangle');
 
 let arrayImg = [circle, rhombus, triangle]; 
 
-for(let j=0; j &lt; =arrayImg.length - 1; j++) { 
+for(let j=0; j &lt;=arrayImg.length - 1; j++) { 
   let element = arrayImg[j]; 
   for(var i = 0; i &lt; 6; i++) { 
     let min = Math.ceil(10); 
@@ -158,6 +158,7 @@ for(let j=0; j &lt; =arrayImg.length - 1; j++) {
 };
           </code>
         </pre>
+      
       </section>
       <div class="wrapper">
         <section class="experience">
@@ -174,6 +175,35 @@ for(let j=0; j &lt; =arrayImg.length - 1; j++) {
             <dt>English and German:</dt>
             <dd>study</dd>
           </dl>
+        </section>
+        <section class="works">
+          <h2 class="works__title">My works</h2>
+          <ul class="works__list">
+            <li class="works__item">
+              <a class="works__link" href="https://github.com/LomakinAnatoliy/SpeakLevel" target="_blank">
+                <figure class="works__image">
+                  <picture>
+                    <source srcset="img/SpeakLevel@2.webp" type="image/webp">
+                    <source srcset="img/SpeakLevel.webp" type="image/webp">
+                    <img  src="img/SpeakLevel.jpg" srcset="img/SpeakLevel@2.jpg" width="412" height="200" loading="lazy" alt="Foto Anatoliy Lomakina">
+                  </picture>
+                </figure>
+                Look at the working code of "SpeakLevel" 
+              </a>
+            </li>
+            <li class="works__item">
+              <a class="works__link" href="https://github.com/LomakinAnatoliy/TestWork-Lamp" target="_blank">
+                <figure class="works__image">
+                  <picture>
+                    <source srcset="img/Lamp@2.webp" type="image/webp">
+                    <source srcset="img/Lamp.webp" type="image/webp">
+                    <img  src="img/Lamp.jpg" srcset="img/Lamp@2.jpg" width="412" height="200" loading="lazy" alt="Foto Anatoliy Lomakina">
+                  </picture>
+                </figure>
+                Look at the working code of "Lamp" 
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
   </main>
