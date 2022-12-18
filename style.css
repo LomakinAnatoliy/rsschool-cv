@@ -30,6 +30,7 @@
 
 :root {
   --font-family: Helvetica, Arial, sans-serif;
+  --font-size: 1.25em;
   --font-weight: 300;
   --line-height: 1.5;
   --color-text: #232231;
@@ -373,15 +374,43 @@ body {
   padding-left: 6.875rem
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
 .experience {
   grid-column: 1/2;
   grid-row: 2/3;
+  min-width: 410px;
 }
 
-.wrapper{
+.experience__text {
+  font-size: var(--font-size);
+}
+
+.languages dt,
+.languages dd{
+  font-size: var(--font-size);
+}
+
+.languages dt{
+  font-weight: 400;
+}
+
+.footer {
+  margin-top: 3.125rem; 
+  border-top: solid var(--main-color) 1px;
+  padding-bottom: 1.25rem;
+}
+
+.footer__wrap {
+  margin-top: 1.25rem;
   display: flex;
   flex-wrap: wrap;
-  grid-column-gap: 1.875rem;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  justify-content: space-between;
+  align-items: center;
 }
