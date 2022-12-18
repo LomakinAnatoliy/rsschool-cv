@@ -429,7 +429,6 @@ body {
 
 .footer__link-rs:hover path,
 .footer__link-rs:focus path {
-  /* fill: var(--hover-color); */
   stroke: var(--hover-color);
   transition: all 0.3s ease-out;
 }
