@@ -36,7 +36,8 @@
     </nav>
     <figure class="header__image">
       <picture>
-        <source src="img/image.webp" srcset="img/image.webp, img/image@2x.webp" type="image/webp">
+        <source srcset="img/image@2x.webp" type="image/webp">
+        <source srcset="img/image.webp" type="image/webp">
         <img  src="img/image.jpg" srcset="img/image@2x.jpg" width="410" height="390" loading="lazy" alt="Foto Anatoliy Lomakina">
       </picture>
     </figure>
@@ -120,6 +121,47 @@
         </ul>
       </section>  
     </div>
+      <section class="code">
+        <h2 class="code__title">Code examples</h2>
+        <p class="code__text">The idea is that when the page is updated, three blocks of figures constantly change their position on the website page. Strong for work “Lamp”</p>
+        <pre class="code__codes">
+          <code>
+const circle = document.querySelector('.circle'); 
+const rhombus = document.querySelector('.rhombus'); 
+const triangle = document.querySelector('.triangle');
+
+let arrayImg = [circle, rhombus, triangle]; 
+
+for(let j=0; j &lt; =arrayImg.length - 1; j++) { 
+  let element = arrayImg[j]; 
+  for(var i = 0; i &lt; 6; i++) { 
+    let min = Math.ceil(10); 
+    let max = Math.floor(35); 
+    let widthMax = Math.floor(document.documentElement.scrollWidth - 40); 
+    let heightMax = Math.floor(document.documentElement.scrollHeight - 40); 
+    let getWidth = Math.floor(Math.random() * (widthMax - min + 1)) + min; 
+    let getHeight = Math.floor(Math.random() * (heightMax - min + 1)) + min; 
+    let getValue =       Math.floor(Math.random() * (max - min + 1)) + min; 
+    element.style.top = getHeight + 'px'; 
+    element.style.left = getWidth + 'px'; 
+    element.style.width = getValue + 'px'; 
+    element.style.height = getValue + 'px'; 
+    let clone = element.cloneNode(false); 
+    document.body.insertAdjacentElement('beforeEnd', clone); 
+  }; 
+  document.body.removeChild(element); 
+};
+          </code>
+        </pre>
+      </section>
+      <div class="wrapper">
+        <section class="experience">
+          <h2 class="experience">Experience</h2>
+        </section>
+        <section class="languages">
+          <h2 class="languages">Languages</h2>
+        </section>
+      </div>
   </main>
 </body>
 </html>
