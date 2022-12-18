@@ -174,14 +174,20 @@ body {
 
 .contacts__item {
   position: relative;
+}
+
+.contacts__item,
+.education__item {
   margin-top: 20px;
 }
 
-.contacts__item a {
+.contacts__item a,
+.education__item a {
   font-size: 1em;
 }
 
-.contacts__tem:first-child {
+.contacts__item:first-child,
+.education__item:first-child {
   margin-top: 30px
 }
 
@@ -233,4 +239,16 @@ body {
 .contacts__git::before {
   background-image: url("img/svg/git_hub.svg");
 }
+
+.education {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: 50px;
+}
+
+.education__item{
+  margin-top: 20px;
+}
+
+
 
