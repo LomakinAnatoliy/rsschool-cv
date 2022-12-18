@@ -8,7 +8,46 @@
   <title>HTML, CSS and Git Basics task</title>
 </head>
 <body>
-  <h1>Anatoliy Lomakin</h1>
-  <p>Student RS-Scholl</p>
+  <header class="header">
+    <nav class="navigation header__navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Contacts</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">My story</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Code examples</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Education</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Experience</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Experience</a>
+        </li>
+      </ul>
+    </nav>
+    <figure class="header__image">
+      <picture>
+        <source src="img/image.webp" srcset="img/image.webp, img/image@2x.webp" type="image/webp">
+        <img  src="img/image.jpg" srcset="img/image@2x.jpg" width="410" height="390" loading="lazy" alt="Foto Anatoliy Lomakina">
+      </picture>
+    </figure>
+    <div class="header__wrap">
+      <h1 class="header__title">Antoliy Lomakin</h1>
+      <p class="header__subtitle">Frontend Developer</p>
+    </div>
+    <section class="story header__story">
+      <h2 class="story__title">My story</h2>
+      <p class="story__text">Programming is a hobby for me. It all started with free courses on “GeekBrains”, from that time my journey into the world of programming began. Now, I spend almost all my free time learning something new.</p>
+    </section>
+  </header>
 </body>
 </html>
