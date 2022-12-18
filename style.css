@@ -152,3 +152,85 @@ body {
   margin-top: 0.938rem;
   font-size: 1.563em;
 }
+
+.container {
+  max-width: 1289px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, auto);
+  padding-top: 3.125rem;
+}
+
+.contacts {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 1em;
+}
+
+.contacts__item {
+  position: relative;
+  margin-top: 20px;
+}
+
+.contacts__item a {
+  font-size: 1em;
+}
+
+.contacts__tem:first-child {
+  margin-top: 30px
+}
+
+.contacts__item span{
+  font-weight: 400;
+}
+
+.contacts__address,
+.contacts__phone,
+.contacts__mail,
+.contacts__git {
+  padding-left: 26px;
+}
+
+.contacts__address::before,
+.contacts__phone ::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 27px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.contacts__address::before {
+  background-image: url("img/svg/address.svg");
+}
+
+.contacts__phone ::before{
+  background-image: url("img/svg/phone.svg");
+}
+
+.contacts__mail::before,
+.contacts__git::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.contacts__mail::before {
+  background-image: url("img/svg/mail.svg");
+}
+
+.contacts__git::before {
+  background-image: url("img/svg/git_hub.svg");
+}
+
