@@ -161,8 +161,9 @@ body {
 
 .wrap {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 410px 1fr;
   grid-template-rows: repeat(2, auto);
+  grid-column-gap: 30px;
   padding-top: 3.125rem;
 }
 
@@ -202,8 +203,8 @@ body {
   padding-left: 26px;
 }
 
-.contacts__address::before,
-.contacts__phone ::before {
+.contacts__address::after,
+.contacts__phone ::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -213,16 +214,16 @@ body {
   content: "";
 }
 
-.contacts__address::before {
+.contacts__address::after {
   background-image: url("img/svg/address.svg");
 }
 
-.contacts__phone ::before{
+.contacts__phone ::after{
   background-image: url("img/svg/phone.svg");
 }
 
-.contacts__mail::before,
-.contacts__git::before {
+.contacts__mail::after,
+.contacts__git::after {
   position: absolute;
   top: 3px;
   left: 0;
@@ -232,11 +233,11 @@ body {
   content: "";
 }
 
-.contacts__mail::before {
+.contacts__mail::after {
   background-image: url("img/svg/mail.svg");
 }
 
-.contacts__git::before {
+.contacts__git::after {
   background-image: url("img/svg/git_hub.svg");
 }
 
@@ -250,5 +251,97 @@ body {
   margin-top: 20px;
 }
 
+.skills {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
 
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(189px, auto));
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.skills__item {
+  position: relative;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-out
+}
+
+.skills__item:hover {
+  box-shadow: 0px 7px 8px rgba(35, 34, 49, 0.32);
+}
+
+.skills__caption {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.skills__caption_js::before,
+.skills__caption_html::before,
+.skills__caption_css::before,
+.skills__caption_gulp::before,
+.skills__caption_sped::before,
+.skills__caption_github::before,
+.skills__caption_design::before,
+.skills__caption_sass::before {
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.skills__caption_sped::before,
+.skills__caption_github::before {
+  width: 54px;
+  height: 54px;
+}
+
+.skills__caption_design::before {
+  width: 120px;
+}
+
+.skills__caption_js::before {
+  background-image: url("img/svg/JS.svg");
+}
+
+.skills__caption_html::before {
+  background-image: url("img/svg/HTML.svg");
+}
+
+.skills__caption_css::before {
+  background-image: url("img/svg/CSS.svg");
+}
+
+.skills__caption_gulp::before {
+  background-image: url("img/svg/Gulp.svg");
+}
+
+.skills__caption_sped::before {
+  background-image: url("img/svg/PageSpeed.svg");
+}
+
+.skills__caption_github::before {
+  background-image: url("img/svg/GitHub.svg");
+}
+
+.skills__caption_design::before {
+  background-image: url("img/svg/Design.svg");
+}
+
+.skills__caption_sass::before {
+  background-image: url("img/svg/SASS.svg");
+}
+
+.skills__text {
+  font-size: 0.875em;
+}
 
